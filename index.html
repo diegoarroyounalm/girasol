@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Girasol - Te quiero</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(to top, #87ceeb, #fdf6c9);
+      font-family: Arial, sans-serif;
+    }
+
+    .contenedor {
+      position: relative;
+      width: 500px;
+      height: 600px;
+    }
+
+    .mensaje {
+      position: absolute;
+      top: 10px;
+      width: 100%;
+      text-align: center;
+      font-size: 60px;
+      font-weight: bold;
+      color: #ff3366;
+      text-transform: uppercase;
+      text-shadow: 3px 3px 10px white;
+      z-index: 10;
+      animation: latido 1.5s infinite;
+    }
+
+    @keyframes latido {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+    }
+
+    .girasol {
+      position: absolute;
+      left: 50%;
+      top: 180px;
+      transform: translateX(-50%);
+      width: 220px;
+      height: 220px;
+    }
+
+    .petalo {
+      position: absolute;
+      width: 70px;
+      height: 120px;
+      background: #f4c430;
+      border-radius: 50%;
+      left: 75px;
+      top: 0;
+      transform-origin: 35px 110px;
+    }
+
+    .centro {
+      position: absolute;
+      width: 90px;
+      height: 90px;
+      background: #5c3b1e;
+      border-radius: 50%;
+      left: 65px;
+      top: 65px;
+      z-index: 2;
+    }
+
+    .tallo {
+      position: absolute;
+      width: 18px;
+      height: 220px;
+      background: #2e8b57;
+      left: 50%;
+      top: 380px;
+      transform: translateX(-50%);
+    }
+
+    .hoja {
+      position: absolute;
+      width: 80px;
+      height: 45px;
+      background: #3fa34d;
+      border-radius: 0 100% 0 100%;
+    }
+
+    .hoja.izq {
+      left: 180px;
+      top: 455px;
+      transform: rotate(-35deg);
+    }
+
+    .hoja.der {
+      left: 245px;
+      top: 500px;
+      transform: rotate(145deg);
+    }
+  </style>
+</head>
+<body>
+  <div class="contenedor">
+    <div class="mensaje">💛 TE QUIERO 💛</div>
+
+    <div class="girasol">
+      <div class="petalo" style="transform: rotate(0deg);"></div>
+      <div class="petalo" style="transform: rotate(30deg);"></div>
+      <div class="petalo" style="transform: rotate(60deg);"></div>
+      <div class="petalo" style="transform: rotate(90deg);"></div>
+      <div class="petalo" style="transform: rotate(120deg);"></div>
+      <div class="petalo" style="transform: rotate(150deg);"></div>
+      <div class="petalo" style="transform: rotate(180deg);"></div>
+      <div class="petalo" style="transform: rotate(210deg);"></div>
+      <div class="petalo" style="transform: rotate(240deg);"></div>
+      <div class="petalo" style="transform: rotate(270deg);"></div>
+      <div class="petalo" style="transform: rotate(300deg);"></div>
+      <div class="petalo" style="transform: rotate(330deg);"></div>
+
+      <div class="centro"></div>
+    </div>
+
+    <div class="tallo"></div>
+    <div class="hoja izq"></div>
+    <div class="hoja der"></div>
+  </div>
+</body>
+</html>
