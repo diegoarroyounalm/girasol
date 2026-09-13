@@ -205,7 +205,7 @@
 
       <div class="cta-row">
         <a class="btn primary" href="https://maps.app.goo.gl/X63uNyjKdsXzwtrm7" target="_blank" rel="noopener">Cómo llegar</a>
-        <a class="btn secondary" id="cal-btn" download="cita.ics" href="#">Agregar a mi calendario</a>
+        <a class="btn secondary" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Caf%C3%A9&amp;dates=20260914T230000Z/20260915T003000Z&amp;details=Starbucks%20-%20Dos%20de%20Mayo&amp;location=Av.%20Dos%20de%20Mayo%20880%2C%20San%20Isidro%2C%20Lima" target="_blank" rel="noopener">Agregar a mi calendario</a>
       </div>
 
       <p class="note">Llego puntual. Si algo cambia, avísame — nos vemos ahí.</p>
@@ -214,21 +214,6 @@
   </div>
 
 <script>
-  // ---- Add to calendar (.ics download, works with Google/Apple/Outlook) ----
-  var ics = [
-    "BEGIN:VCALENDAR",
-    "VERSION:2.0",
-    "BEGIN:VEVENT",
-    "DTSTART:20260914T230000Z",
-    "DTEND:20260915T003000Z",
-    "SUMMARY:Café ☕",
-    "LOCATION:Av. Dos de Mayo 880\\, San Isidro\\, Lima",
-    "DESCRIPTION:Starbucks - Dos de Mayo",
-    "END:VEVENT",
-    "END:VCALENDAR"
-  ].join("\r\n");
-  document.getElementById("cal-btn").href = "data:text/calendar;charset=utf-8," + encodeURIComponent(ics);
-
   // ---- Countdown ----
   var target = new Date("2026-09-14T18:00:00-05:00").getTime();
 
